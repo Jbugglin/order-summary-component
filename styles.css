@@ -29,7 +29,7 @@ body {
 
 .container {
     width: 85vw;
-    height: 75vh;
+    height: max-content;
     background-color: white;
     border-radius: 25px;
 }
@@ -78,23 +78,36 @@ body {
 }
 
 #plan-details img {
-    border: 1px solid red;
     border-radius: 100%;
 }
 
 #plan-details div {
-    border: 1px solid blue;
+    text-align: center;
+    margin: 0.5rem 0rem;
+    padding: 0rem 2.8rem 0rem 1rem;
+}
+
+#plan-details h2 {
+    font-size: .85em;
+    font-weight: 900;
+    margin: 0.125rem 0rem;
+}
+
+#plan-details .pricing-plan {
+    font-size: .80em;
+    font-weight: 700;
+    color: var(--desatBlue);
 }
 
 #change-plan-link {
+    font-size: 0.8em;
     font-weight: 700;
-    padding: 0em 1em 0em 1em;
+    padding: 0em;
     margin: 0rem 0rem 0rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--brightBlue);
-    border: 1px solid red;
 }
 
 #change-plan-link:hover {
@@ -103,8 +116,7 @@ body {
 }
 
 ul {
-    border: 1px solid red;
-    margin: 0rem 1.5rem;
+    margin: 0rem 1.5rem 1rem;
 }
 
 li {
@@ -125,6 +137,8 @@ ul :first-child {
     background-color: var(--brightBlue);
     color: white;
     border-radius: .75em;
+    box-shadow: 2px 15px 20px hsl(224, 77%, 86%);
+    margin: 0rem 0rem 1rem 0rem;
 }
 
 ul :first-child:hover {
@@ -143,5 +157,6 @@ footer {
 @media screen and (min-width: 376px) {
     main {
         max-width: 320px;
+        height: 100%;
     }
 }
