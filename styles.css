@@ -156,7 +156,7 @@ footer {
 
 @media screen and (min-width: 376px) {
     main {
-        max-width: 320px;
+        max-width: 375px;
         height: 100%;
     }
     body {
